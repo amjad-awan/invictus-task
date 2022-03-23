@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600&family=Palanquin:wght@200;500;600&display=swap');
+
+/* 
+
+font-family: 'Palanquin', sans-serif;
+font-family: 'Palanquin Dark', sans-serif; */
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Quicksand', sans-serif;
+}
+
+span{
+    font-family: 'Palanquin Dark', sans-serif; 
+    color: #FF6600;
+}
+
+main{
+overflow: hidden;
+}
+
+h1{
+font-weight: bold;
+font-size: 40px;
+/* margin-bottom: 20px; */
+/* line-height: 40px; */
+font-family: 'Palanquin Dark', sans-serif; 
+}
+
+h3
+{
+    font-family: 'Palanquin Dark', sans-serif; 
+}
+a{
+text-decoration: none !important;
+}
+
+.top-bar{
+background-color: #101276;
+padding: 5px 7%;
+}
+.top-bar span{
+color: #fff;
+font-size: 20px;
+}
+
+
+
+
+
+/*-----------------------------------------------------      hero-section -------  ------------------------------------*/
+
+.hero-section
+{
+width:100%;
+height: 100%;
+position: relative;
+overflow: hidden;
+
+}
+.blurred
+{
+background-image: url("img/hero-bg.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+/* padding: 1rem 7%; */
+/* width: 100%; */
+min-height: 80vh;
+max-height: auto;
+filter: blur(7px);
+/* z-index: 11; */
+}
+
+#myCarousel
+{
+position: absolute;
+top:50%;
+left:50%;
+width: 100%;
+height: 100%; 
+transform: translate(-50%,-50%);
+background-color: transparent !important;
+}
+
+
+
+.hero-section .cards
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: .5rem 5rem;
+padding: 5rem 7%;
+border: 2px solid red;
+background-color: transparent;
+
+}
+
+.hero-section .cards .card
+{
+flex:1 1 30rem;
+}
+
+.hero-section .cards .card .text span
+{
+color: #101276;
+font-size: 30px;
+font-family: 'Palanquin', sans-serif;
+font-weight: 500;
+}
+
+.hero-section .cards .card .text h1{
+color: #101276;
+font-family: 'Palanquin Dark', sans-serif; 
+font-size: 5rem;
+line-height: 60px;
+}
+
+.hero-section .cards .card .text p
+{
+font-size: 20px;
+
+color:#1f1e1e;
+font-weight: 500
+}
+
+.hero-section .card img{
+width: 400px;
+height: 400px;
+object-fit: cover;
+
+float: right;
+}
+
+.btn 
+{
+margin-top: 30px;
+}
+.btn a
+{
+padding: 1rem 3rem;
+background-color: #FF6600;
+border-radius: 5px;
+color: #fff;
+font-size: 20px;
+}
+ 
+
+/*-------------------- -------------------------------hero ends ----------------------------*/
+
+.call-imag
+{
+  padding: 2rem 1rem;
+  transform: translateY(-40px);
+  text-align: center;
+}
+
+.call-imag img
+{
+    object-fit:contain
+
+}
+
+
+/*--------------- success cards carousel --------------*/
+
+.success
+{
+    padding: 2rem 7%;
+    text-align: center;
+    background-color: #f5f4f4;
+}
+.success .headline
+{
+    margin-bottom: 50px;
+}
+.success h1
+{
+    color: #101276;
+    
+font-size: 5rem;
+line-height: 80px;
+}
+
+
+
+.owl-carousel 
+
+{
+    margin-bottom: 100px;
+}
+
+ p
+{
+    font-size: 17px;
+    line-height: 25px;
+    color:#1f1e1e;
+    font-weight: 500
+}
+.success .item
+{
+    text-align: left;
+}
+.success .item img
+{
+    max-height: 400px;
+    object-fit: cover;
+}
+.success .item h3
+{
+    color: #101276;
+    font-family: 'Palanquin Dark', sans-serif; 
+   
+}
+
+/* ---------------------------------------------------------------guider ---------------------------------*/
+
+.guider
+{
+    background-color: #fff;
+}
+.guider img
+{
+    min-height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.img span
+{
+    position: absolute;
+    top:30px;
+    right: 30px;
+    z-index: 111;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 182, 28);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+   
+}
+
+.img span i{
+    font-weight: bold;
+
+}
+.guider .item .img .details
+{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    background-color: #10127686;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 0rem;
+    flex-direction: column;
+    padding: 50px;
+    transform: translateY(-100%);
+    transition: all .3s linear;
+}
+.guider .item .img:hover .details
+{
+    transform: translateY(0%);
+}
+.guider .item .details a
+{
+   color: #fff;
+   font-weight: 700;
+   width: 100%;
+   text-align: center;
+   border-radius: 5px;
+   padding: .5rem 0rem;
+}
+
+.guider .item .details a:first-child
+{
+    border: 2px solid #fff;
+    
+}
+
+.guider .item .details a:last-child
+{
+    background-color: #FF6600;
+}
+.guider .info
+
+{
+    background-color: #fff;
+    width: 80%;
+    padding: 1rem 0rem;
+    /* padding: 10px; */
+    margin: 0 auto;
+    transform: translateY(-40px);
+    text-align: center;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, .1);
+}
+
+.guider .info h3
+{
+   
+    margin: unset;
+}
+
+.guider .info .rating i
+{
+    color: #FF6600;
+}
+
+
+/*--------------------------------family tictus--------------------------------*/
+
+.family
+{
+    padding: 0rem  7% 15rem 7%;
+    background-color: #f5f4f4;
+}
+
+ .cards
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+ .cards .card
+{
+    flex: 1 1 40rem;
+}
+
+
+
+.inner-cards 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    gap: 2rem;
+    margin-top: 40px;
+}
+
+.inner-cards .inner-card
+{
+    /* all: unset; */
+    flex: 1 1 30rem;
+    display: flex;
+    justify-content: center;
+    gap:0rem 2rem;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.inner-cards .inner-card h4
+{
+    color: #101276;
+    font-weight: bold;
+}
+
+.family .cards .card img
+{
+    float: right;
+}
+
+/*   ------------------------------------------------------------Mobile APP ----------------------------------------*/
+
+
+.mobile-app
+{
+  padding: 3rem 7%;
+  background-color: #FF6600;
+  /* height: 70vh;
+  max-height: 100%; */
+}
+
+.mobile-app .mobile-app-cards
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap:5rem;
+   flex-wrap: wrap;
+}
+
+.mobile-app .mobile-app-cards .mobile-app-card
+{
+  flex:1 1 20rem;
+}
+.mobile-app .mobile-app-cards img
+{
+    transform: translateY(-120px);
+     height: 100%;
+    width: 400px;
+    object-fit: contain;
+}
+
+.mobile-app .mobile-app-cards h1
+{
+    color: #fff;
+    font-size: 30px;
+}
+.mobile-app .card  p{
+    color: #fff;
+}
+.mobile-app .mobile-app-cards .btn a
+{
+  padding: 2rem 3rem;
+  background-color: #101276;
+  border-radius: 100px;
+}
+
+/* --------------------------------------- happ-service -----------------------------------*/
+
+
+
+.happy-service
+{
+    padding: 3rem 3%;
+    text-align: center;
+    background-color: #f5f4f4;
+    position: relative;
+    min-height: 100vh;
+}
+
+
+.happy-service .headline
+{
+    margin-bottom: 8rem;
+}
+.happy-service .headline h1
+{
+    color: #101276;
+}
+.swiper-slide
+{
+    /* padding: 0px 10rem; */
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.happy-service .swiper-cards
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   width: 100%;
+   gap:0rem 1rem;
+}
+/* .happy-service .swiper-cards .swiper-card
+{
+   flex: 1 1 30rem;
+} */
+.happy-service  .swiper-cards .feedback
+{
+    left:100px;
+    transform: translateY(-50px);
+    background-color: #101276;
+    padding: 6rem;
+    max-width: 400px;
+    /* min-height: 400px; */
+    color: #fff;
+    z-index: 1111;
+    text-align: left;
+    position: relative;
+}
+
+.happy-service  .swiper-cards .feedback .fa-solid
+{
+    position: absolute;
+    color: #b0b4b4;
+    font-size: 30px;
+}
+.happy-service  .swiper-cards .feedback .fa-quote-left
+{
+    top:30px;
+    left: 30px;
+}
+
+.happy-service  .swiper-cards .feedback .fa-quote-right
+{
+    bottom:100px;
+    right:70px;
+}
+.happy-service  .swiper-cards .feedback h3{
+    font-weight: 400;
+    margin-top: 30px;
+}
+.happy-service  .swiper-cards .feedback p{
+    color: #fff;
+   
+}
+
+
+
+
+
+
+@media only screen and (max-width:1024px){
+
+.hero-section .cards
+{
+flex-direction: column;
+}
+.hero-section .card img{
+
+
+float: center;
+}
+.happy-service .swiper-cards .swiper-card img
+{
+   display: none;
+}
+
+.happy-service .swiper-cards .swiper-card .feedback
+{
+    left:0;
+    transform: translateY(0px);
+   
+    /* min-height: 400px; */
+}
+
+
+}
+
+@media only screen and (max-width:768px){
+.hero-section .cards .card .text h1{ 
+font-size: 3rem; 
+line-height: 30px;
+}
+.hero-section .cards .card .text p
+{
+font-size: 15px;
+}
+
+
+
+}

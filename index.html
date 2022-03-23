@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+ 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+ 
+  
+   
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 2rem 7%;
+            position: relative;
+            z-index: 1111;
+            width: 100%;
+
+        }
+
+        .toggle-btn {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+
+        }
+
+        nav .menu-bar {
+            display: flex;
+            gap: 0px 1rem;
+            z-index: 111;
+
+        }
+
+
+
+        nav .menu-bar a {
+            color: #1f1e1e;
+            font-weight: bold;
+            padding: 10px 20px;
+            position: relative;
+            text-align: center;
+            font-size: 20px;
+            transition: transform .1s linear;
+        }
+
+        nav .menu-bar a::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            background-color: #FF6600;
+            height: 1px;
+            width: 0;
+            transition: all .1s linear;
+
+        }
+
+        nav .menu-bar a:hover {
+            transform: scale(.8);
+        }
+
+        nav .menu-bar a:hover::after {
+            width: 100%
+        }
+
+        nav .menu-bar a:last-child {
+            background-color: #FF6600;
+            padding: 10px 5rem;
+            border-radius: 5px;
+            color: #fff;
+            margin-left: 30px;
+        }
+
+        nav .menu-bar a:last-child::after {
+            all: unset;
+        }
+
+        @media only screen and (max-width:1024px) {
+
+            .toggle-btn {
+                display: block;
+                color: #FF6600;
+                border: 1px solid #FF6600;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+
+            /* nav
+{
+position: relative;
+} */
+
+            .menu-bar {
+                position: absolute;
+                flex-direction: column;
+                padding: 2rem;
+                top: 100px;
+                left: 0;
+                right: 0;
+                border: .5px solid rgba(187, 187, 187, .5);
+                border-radius: 5px;
+                display: none !important;
+                background-color: #fff;
+
+            }
+
+            .show.menu-bar {
+                display: flex !important;
+            }
+
+            nav .menu-bar a::after {
+                all: unset;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <div class="top-bar">
+            <span>welcome to consultancy agency </span>
+        </div>
+        <nav>
+            <span class="toggle-btn"><i class="fa-solid fa-bars"></i></span>
+            <a href="index.html" class="logo"><img src="img/logo 1.png" alt=""></a>
+            <div class="menu-bar">
+                <a href="#" class="menu-link">Demos</a>
+                <a href="#" class="menu-link">Pages</a>
+                <a href="#" class="menu-link">Services</a>
+                <a href="#" class="menu-link">Blogs</a>
+                <a href="#" class="menu-link">About</a>
+                <a href="#" class="menu-link">Contact</a>
+                <a href="#" class="menu-link">Login</a>
+            </div>
+        </nav>
+
+        <section class="hero-section">
+            <section class="blurred">
+
+            </section>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" date-interval="1000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="cards">
+                            <div class="card">
+                                <div class="text">
+                                    <span>We Are</span>
+                                    <h1>Professional Business Speakers</h1>
+                                    <p>
+                                        ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur ea similique
+                                        incidunt eum provident ab cum obcaecati et facilis, eos dicta iusto totam hic
+                                        quidem
+                                        praesentium doloribus laborum aliquam reiciendis.
+                                    </p>
+
+                                </div>
+                                <div class="btn">
+                                    <a href="#">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+
+
+                            </div>
+                            <div class="card">
+                                <img src="img/png-transparent-two-person-standing-side-by-side-with-cross-hands-partnership-business-partner-small-business-businessperson-business-people-company-human-resource-management-service.png"
+                                    alt="">
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="item">
+                        <div class="cards">
+                            <div class="card">
+                                <div class="text">
+                                    <span>We Are</span>
+                                    <h1>Professional Business Speakers</h1>
+                                    <p>
+                                        ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur ea similique
+                                        incidunt eum provident ab cum obcaecati et facilis, eos dicta iusto totam hic
+                                        quidem
+                                        praesentium doloribus laborum aliquam reiciendis.
+                                    </p>
+
+                                </div>
+                                <div class="btn">
+                                    <a href="#">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+
+
+                            </div>
+                            <div class="card">
+                                <img src="img/png-transparent-two-person-standing-side-by-side-with-cross-hands-partnership-business-partner-small-business-businessperson-business-people-company-human-resource-management-service.png"
+                                    alt="">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="item">
+                        <div class="cards">
+                            <div class="card">
+                                <div class="text">
+                                    <span>We Are</span>
+                                    <h1>Professional Business Speakers</h1>
+                                    <p>
+                                        ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur ea similique
+                                        incidunt eum provident ab cum obcaecati et facilis, eos dicta iusto totam hic
+                                        quidem
+                                        praesentium doloribus laborum aliquam reiciendis.
+                                    </p>
+
+                                </div>
+                                <div class="btn">
+                                    <a href="#">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+
+
+                            </div>
+                            <div class="card">
+                                <img src="img/png-transparent-two-person-standing-side-by-side-with-cross-hands-partnership-business-partner-small-business-businessperson-business-people-company-human-resource-management-service.png"
+                                    alt="">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a> -->
+            </div>
+
+        </section>
+
+
+
+        <!-- <section class="call-imag">
+            <img src="img/Group 3.png" alt="">
+
+        </section> -->
+
+
+        <section class="success">
+            <div class="headline">
+                <h1>We will lead you towards your <span> success </span></h1>
+                <p>Our Service take on the tasks that computer do best</p>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="img/2.png" alt="">
+                    <h3>Life Consultant</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, fugit. Laboriosam neque dolorem
+                        consequuntur aut temporibus nemo, voluptatibus optio aliquam earum dolor commodi at ipsam id
+                        omnis sequi culpa eligendi?.
+                    </p>
+
+                </div>
+                <div class="item">
+                    <img src="img/6.png" alt="">
+                    <h3>Businnes Consultant</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, fugit. Laboriosam neque dolorem
+                        consequuntur aut temporibus nemo, voluptatibus optio aliquam earum dolor commodi at ipsam id
+                        omnis sequi culpa eligendi?.
+                    </p>
+
+                </div>
+                <div class="item">
+                    <img src="img/1.png" alt="">
+                    <h3>Education Consultant</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, fugit. Laboriosam neque dolorem
+                        consequuntur aut temporibus nemo, voluptatibus optio aliquam earum dolor commodi at ipsam id
+                        omnis sequi culpa eligendi?
+                    </p>
+
+                </div>
+                <div class="item">
+                    <img src="img/2.png" alt="">
+                    <h3>Life Consultant</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, fugit. Laboriosam neque dolorem
+                        consequuntur aut temporibus nemo, voluptatibus optio aliquam earum dolor commodi at ipsam id
+                        omnis sequi culpa eligendi?.
+                    </p>
+
+                </div>
+                <div class="item">
+                    <img src="img/6.png" alt="">
+                    <h3>Businnes Consultant</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, fugit. Laboriosam neque dolorem
+                        consequuntur aut temporibus nemo, voluptatibus optio aliquam earum dolor commodi at ipsam id
+                        omnis sequi culpa eligendi?.
+                    </p>
+
+                </div>
+                <div class="item">
+                    <img src="img/1.png" alt="">
+                    <h3>Education Consultant</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, fugit. Laboriosam neque dolorem
+                        consequuntur aut temporibus nemo, voluptatibus optio aliquam earum dolor commodi at ipsam id
+                        omnis sequi culpa eligendi?
+                    </p>
+
+                </div>
+                <div class="item">
+                    <img src="img/2.png" alt="">
+                    <h3>Life Consultant</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, fugit. Laboriosam neque dolorem
+                        consequuntur aut temporibus nemo, voluptatibus optio aliquam earum dolor commodi at ipsam id
+                        omnis sequi culpa eligendi?.
+                    </p>
+
+                </div>
+                <div class="item">
+                    <img src="img/6.png" alt="">
+                    <h3>Businnes Consultant</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, fugit. Laboriosam neque dolorem
+                        consequuntur aut temporibus nemo, voluptatibus optio aliquam earum dolor commodi at ipsam id
+                        omnis sequi culpa eligendi?.
+                    </p>
+
+                </div>
+                <div class="item">
+                    <img src="img/1.png" alt="">
+                    <h3>Education Consultant</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, fugit. Laboriosam neque dolorem
+                        consequuntur aut temporibus nemo, voluptatibus optio aliquam earum dolor commodi at ipsam id
+                        omnis sequi culpa eligendi?
+                    </p>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="success guider">
+            <div class="headline">
+                <h1>We will lead you towards your <span> success </span></h1>
+                <p>Our Service take on the tasks that computer do best</p>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="img">
+                        <img src="img/5.png" alt="">
+                        <div class="details">
+                            <a href="#">View Details</a>
+                            <a href="#">Book an appointment</a>
+                        </div>
+                        <span><i class="fa-solid fa-check"></i></span>
+                    </div>
+
+                    <div class="info">
+                        <h3>john Doe</h3>
+                        <p>Regional Leader</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/4.png" alt="">
+                        <div class="details">
+                            <a href="#">View Details</a>
+                            <a href="#">Book an appointment</a>
+                        </div>
+                        <span><i class="fa-solid fa-check"></i></span>
+                    </div>
+
+                    <div class="info">
+                        <h3>john Doe</h3>
+                        <p>Regional Leader</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/3.png" alt="">
+                        <div class="details">
+                            <a href="#">View Details</a>
+                            <a href="#">Book an appointment</a>
+                        </div>
+                        <span><i class="fa-solid fa-check"></i></span>
+                    </div>
+
+                    <div class="info">
+                        <h3>john Doe</h3>
+                        <p>Regional Leader</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/7.png" alt="">
+                        <div class="details">
+                            <a href="#">View Details</a>
+                            <a href="#">Book an appointment</a>
+                        </div>
+                        <span><i class="fa-solid fa-check"></i></span>
+                    </div>
+
+                    <div class="info">
+                        <h3>john Doe</h3>
+                        <p>Regional Leader</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="item">
+                    <div class="img">
+                        <img src="img/5.png" alt="">
+                        <div class="details">
+                            <a href="#">View Details</a>
+                            <a href="#">Book an appointment</a>
+                        </div>
+                        <span><i class="fa-solid fa-check"></i></span>
+                    </div>
+
+                    <div class="info">
+                        <h3>john Doe</h3>
+                        <p>Regional Leader</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/4.png" alt="">
+                        <div class="details">
+                            <a href="#">View Details</a>
+                            <a href="#">Book an appointment</a>
+                        </div>
+                        <span><i class="fa-solid fa-check"></i></span>
+                    </div>
+
+                    <div class="info">
+                        <h3>john Doe</h3>
+                        <p>Regional Leader</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/3.png" alt="">
+                        <div class="details">
+                            <a href="#">View Details</a>
+                            <a href="#">Book an appointment</a>
+                        </div>
+                        <span><i class="fa-solid fa-check"></i></span>
+                    </div>
+
+                    <div class="info">
+                        <h3>john Doe</h3>
+                        <p>Regional Leader</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/7.png" alt="">
+                        <div class="details">
+                            <a href="#">View Details</a>
+                            <a href="#">Book an appointment</a>
+                        </div>
+                        <span><i class="fa-solid fa-check"></i></span>
+                    </div>
+
+                    <div class="info">
+                        <h3>john Doe</h3>
+                        <p>Regional Leader</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/5.png" alt="">
+                        <div class="details">
+                            <a href="#">View Details</a>
+                            <a href="#">Book an appointment</a>
+                        </div>
+                        <span><i class="fa-solid fa-check"></i></span>
+                    </div>
+
+                    <div class="info">
+                        <h3>john Doe</h3>
+                        <p>Regional Leader</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/4.png" alt="">
+                        <div class="details">
+                            <a href="#">View Details</a>
+                            <a href="#">Book an appointment</a>
+                        </div>
+                        <span><i class="fa-solid fa-check"></i></span>
+                    </div>
+
+                    <div class="info">
+                        <h3>john Doe</h3>
+                        <p>Regional Leader</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/3.png" alt="">
+                        <div class="details">
+                            <a href="#">View Details</a>
+                            <a href="#">Book an appointment</a>
+                        </div>
+                        <span><i class="fa-solid fa-check"></i></span>
+                    </div>
+
+                    <div class="info">
+                        <h3>john Doe</h3>
+                        <p>Regional Leader</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="img/7.png" alt="">
+                        <div class="details">
+                            <a href="#">View Details</a>
+                            <a href="#">Book an appointment</a>
+                        </div>
+                        <span><i class="fa-solid fa-check"></i></span>
+                    </div>
+
+                    <div class="info">
+                        <h3>john Doe</h3>
+                        <p>Regional Leader</p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="family">
+            <div class="cards">
+                <div class="card">
+                    <h1>
+                        Why you choose <span>tictus family</span>
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis unde consectetur quidem ex
+                        enim voluptas sequi nam, cum libero, voluptatum ratione consequatur voluptate, ipsam
+                        voluptatibus natus laborum! Et, provident ab.</p>
+
+                    <div class="inner-cards">
+                        <div class="inner-card">
+                            <span><img src="img/8.png" alt=""></span>
+                            <h4>12000+ verfied experts</h4>
+                        </div>
+                        <div class="inner-card">
+                            <span><img src="img/9.png" alt=""></span>
+                            <h4>12000+ verfied experts</h4>
+                        </div>
+                        <div class="inner-card">
+                            <span><img src="img/10.png" alt=""></span>
+                            <h4>12000+ verfied experts</h4>
+                        </div>
+                        <div class="inner-card">
+                            <span><img src="img/11.png" alt=""></span>
+                            <h4>12000+ verfied experts</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/1.png" alt="">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="mobile-app">
+            <div class="mobile-app-cards">
+                <div class="mobile-app-card">
+
+                    <img src="img/12.png" alt="">
+
+                </div>
+
+                <div class="mobile-app-card">
+
+                    <h1>How to book an </h1>
+                    <h1> appointment through </h1>
+                    <h1>Mobile App</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo tempora reiciendis, accusantium
+                        quo eum sapiente ipsa expedita dignissimos cupiditate sed dolor, incidunt eius dolore rerum
+                        officiis repellendus soluta numquam dolorem?</p>
+
+                    <div class="btn">
+                        <a href="#"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                        <a href="#"><i class="fa-brands fa-apple"></i> Google Play</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="happy-service">
+
+            <div class="headline">
+                <h1>Meet the people who</h1>
+                <h1>are <span>happy</span> with our <span>services</span></h1>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus aliquam consequuntur maiores
+                    suscipit quae reprehenderit autem repudiandae et quod enim! Debitis necessitatibus soluta,
+                    repellendus minus quasi atque deserunt quos maxime!</p>
+            </div>
+<!-- Slider main container -->
+<div class="swiper swiper-card">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+          <div class="swiper-cards">
+              <div class="swiper-card">
+                <div class="feedback">
+                    <i class="fa-solid fa-quote-left"></i>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quisquam ex dignissimos
+                          aliquam ducimus dolore iure natus, praesentium dolores asperiores ipsam eos odio
+                          necessitatibus molestiae saepe numquam maxime, voluptatem quae.
+                      </p>
+          
+                      <h3>John Doe & Sara John</h3>
+                      <i class="fa-solid fa-quote-right"></i>
+                  </div>
+              </div>
+           <div class="swiper-card">
+            <img src="img/13.png" alt="">
+           </div>
+       
+
+        
+    </div>
+</div>
+<div class="swiper-slide ">
+    <div class="swiper-cards">
+        <div class="swiper-card">
+            <div class="feedback">
+                <i class="fa-solid fa-quote-left"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quisquam ex dignissimos
+                      aliquam ducimus dolore iure natus, praesentium dolores asperiores ipsam eos odio
+                      necessitatibus molestiae saepe numquam maxime, voluptatem quae.
+                  </p>
+      
+                  <h3>John Doe & Sara John</h3>
+                  <i class="fa-solid fa-quote-right"></i>
+              </div>
+        </div>
+     <div class="swiper-card">
+      <img src="img/13.png" alt="">
+     </div>
+ 
+
+  
+</div>
+</div>
+<div class="swiper-slide ">
+    <div class="swiper-cards">
+        <div class="swiper-card">
+          <div class="feedback">
+            <i class="fa-solid fa-quote-left"></i>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quisquam ex dignissimos
+                  aliquam ducimus dolore iure natus, praesentium 
+              </p>
+  
+              <h3>John Doe & Sara John</h3>
+              <i class="fa-solid fa-quote-right"></i>
+          </div>
+        </div>
+     <div class="swiper-card">
+      <img src="img/13.png" alt="">
+     </div>
+ 
+
+  
+</div>
+</div>
+   
+  
+  
+   
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  </div>
+
+        
+       
+            
+
+        </section>
+    </main>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/app.js"></script>
+    
+</body>
+
+</html>
