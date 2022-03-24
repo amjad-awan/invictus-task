@@ -28,7 +28,7 @@ overflow: hidden;
 
 /* margin-bottom: 20px; */
 /* line-height: 40px; */
-font-size: 30px;
+/* font-size: 30px; */
  font-family: 'Palanquin Dark', sans-serif;
 }
 
@@ -46,7 +46,8 @@ padding: 5px 7%;
 }
 .top-bar span{
 color: #fff;
-font-size: 20px;
+font-size: 16px;
+font-weight: 400;
 }
 
 
@@ -61,18 +62,20 @@ font-size: 20px;
 
  min-height: 80vh;
 max-height: 100%;
-/* position: relative; */
+position: relative;
+    padding: 1rem 7%;
 /* overflow: hidden; */
 background-image: url("img/hero-bg.png");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-
 display: flex;
 justify-content: space-between;
 align-items: center;
 
+
 }
+
 /* .blurred
 {
 background-image: url("img/hero-bg.png");
@@ -100,6 +103,13 @@ background-color: transparent !important;
 
 
 
+ #myCarousel
+ {
+     width: 100%;
+
+
+ }
+
 .hero-section .cards
 {
 display: flex;
@@ -116,8 +126,8 @@ flex-wrap: wrap;
 
 .hero-section .cards .card
 {
-flex:1 1 20rem;
- padding: 2rem 7%;
+flex:1 1 10rem;
+ /* padding: 2rem 7%; */
 }
 
 .hero-section .cards .card .text span
@@ -126,6 +136,7 @@ color: #101276;
 font-size: 30px;
 font-family: 'Palanquin', sans-serif;
 font-weight: 500;
+/* padding: 0rem 7%; */
 }
 
 .hero-section .cards .card .text h1{
@@ -133,6 +144,7 @@ color: #101276;
 font-family: 'Palanquin Dark', sans-serif;
 font-size: 3rem;
 line-height: 50px;
+/* padding: 0rem 7%; */
 }
 
 .hero-section .cards .card .text p
@@ -140,20 +152,22 @@ line-height: 50px;
 font-size: 20px;
 
 color:#1f1e1e;
-font-weight: 500
+font-weight: 500;
+ /* padding: 0rem 7%; */
 }
 
 .hero-section .card img{
-width: 400px;
-height: 400px;
-object-fit: cover;
-
+max-width: 300px;
+max-height: 500px;
+object-fit: fill;
 float: right;
+/* padding: 0rem 7%; */
 }
 
 .btn
 {
 margin-top: 30px;
+/* padding: 0rem 7%; */
 }
 .btn a
 {
