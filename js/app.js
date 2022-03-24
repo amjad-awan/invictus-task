@@ -42,11 +42,11 @@ $('.owl-carousel').owlCarousel({
 
   var swiper = new Swiper(".swiper-card", {
     loop: true,
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     // type: "progressbar",
-    //     clickable: true,
-    //   },
+    pagination: {
+        el: ".swiper-pagination",
+        // type: "progressbar",
+        // dynamicBullets: true,
+      },
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
